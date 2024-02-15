@@ -1,72 +1,109 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renato Costa - Personal Webpage</title>
     <link rel="stylesheet" href="./CSS/mystyle.css">
-    <link rel="stylesheet" href="./JS/myjs.js">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 
 <body>
-
-    <nav class="myHeader">
-        <img src="./IMG/renato.jpg" class="myImg" alt="">
-        <ul class="sidebar">
-            <li onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
-                    width="24">
-                    <path
-                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-                </svg></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Works</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
+    <nav>
+        <img src="./IMG/renato.jpg" alt="" class="myImg">
         <ul>
-            <li class="hideOnMobile"><a href="#">Home</a></li>
-            <li class="hideOnMobile"><a href="#">Skills</a></li>
-            <li class="hideOnMobile"><a href="#">Works</a></li>
-            <li class="hideOnMobile"><a href="#">Contacto</a></li>
-            <li onclick="showSidebar()"><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="20"
-                        viewBox="0 -960 960 960" width="20">
-                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-                    </svg></a></li>
-
+            <li><a class="active" href="#About">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
+        <label id="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" color="white" height="20" viewBox="0 -960 960 960" width="20">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
+        </label>
     </nav>
 
-    <div class="conteiner-a">
-        <div class="conteiner-img">
-            <img class="perfilimg" src="./IMG/foto meio corpo.jpg" alt="">
+    <section class="conteiner-a" id="About">
+        <div class="alinhamento">
+            <div class="textformat" id="text"></div>
         </div>
-        <div>
+    </section>
 
+    <section class="conteiner-b" id="skills">
+        <div class="inner">
+            <div class="header">
+                <h1>My skills</h1>
+            </div>
+            <div class="container">
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="IMG/icons8-ai-64.png" class="skill-icon">
+                        </div>
+                        <h3>AI</h3>
+                    </div>
+                    <p>Abilidade em utilizaçao das melhores ferramentas, chatGPT, monica, etc.</p>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="IMG/icons8-joomla-logo-48.png" class="skill-icon">
+                        </div>
+                        <h3>Joomla</h3>
+                    </div>
+                    <p>Capacidade de construir sites atraves do Joomla e gerir os seus contiudos</p>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="IMG/icons8-github-64.png" class="skill-icon">
+                        </div>
+                        <h3>
+                            Github
+                        </h3>
+                    </div>
+                    <p>Sistema de partilha de informaçaoe e programação tendo abilidades</p>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="IMG/icons8-connect-64.png" class="skill-icon">
+                        </div>
+                        <h3>Servidores </h3>
+                    </div>
+                    <p>Capacidade de configuração e instalaçao de Servidor</p>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="IMG/icons8-html-5-64.png" class="skill-icon">
+                        </div>
+                        <h3>HTML:5</h3>
+                    </div>
+                    <p>Back-end utilizando a tecnologia HTML 5 em desenvolver sitemas WEB </p>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="IMG/icons8-mysql-64.png" class="skill-icon">
+                        </div>
+                        <h3> MYSQL</h3>
+                    </div>
+                    <p>Utilização de base de dados para armazenar dados e transformar em conhecimento </p>
+                </div>
+            </div>
         </div>
-        <div class="conteiner-text">
-            <h2>Analista de dados e sistemas</h2>
+    </section>
 
-            <p>Eu Renato da Luz Brito Costa, nascido 27/11/1987, Cabo verdiano
-                Licenciado em informatica de gestão na universidade jean piaget
-                no ano 2022, esteve 6 meses na NOSI como estagio profissional e
-                mais 6 meses na ARME tendo um periudo muito excitante na minha
-                jornado profissional.
-                Desenho processos em qualquer tipo de negocio conhecimento em
-                algumas plataformas low-code, conhecimento em java, analista de
-                dados em windows server 2019, BI, Ecxel.
-                Telefone: 9745243.
-            </p>
-        </div>
-    </div>
+    <section class="conteiner-c" id="text">
 
+    </section>
 
+    <section class="conteiner-d" id="contact">
+
+    </section>
 
     <footer class="myFooter">
         <div class="footer-content">
@@ -77,26 +114,44 @@
             <a href="www.linkedin.com/in/renato-costa-50639a17b" target="_blank"><img class="myImgSocial"
                     src="./IMG/linkedin.png" alt=""></a>
         </div>
-
+        <div class="rodape">copyright 2023 | Renato Costa</div>
     </footer>
-
-    <script>
-        const sidebar = document.querySelector('.sidebar');
-
-        function toggleSidebar() {
-            sidebar.classList.toggle('show');
-        }
-        function showSidebar() {
-            const sidebar = document.querySelector('.sidebar');
-            sidebar.style.display = 'flex';
-
-
-        }
-        function hideSidebar() {
-            const sidebar = document.querySelector('.sidebar');
-            sidebar.style.display = 'none';
-        }
-    </script>
 </body>
+
+<script>
+    $(document).ready(function () {
+        $('#icon').click(function () {
+            $('ul').toggleClass('show');
+        });
+        // var typed = new Typed(".typing", {
+        //strings: ["Analista de sistema", "e sistema"],
+        //typeSpeed: 100,
+        //backSpeed: 60,
+        //loop: true
+        //});
+
+    });
+
+    const el = document.querySelector("#text");
+    const text = "Analista de sistemas e dados";
+    const interval = 300;
+    function showText(el, text, interval) {
+        const char = text.split("").reverse();
+
+
+        const typer = setInterval(() => {
+            if (!char.length) {
+
+                return clearInterval(typer);
+
+            }
+            const next = char.pop();
+            el.innerHTML += next;
+
+        }, interval);
+    }
+
+    showText(el, text, interval);
+</script>
 
 </html>
