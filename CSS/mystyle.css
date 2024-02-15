@@ -1,0 +1,172 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+min-height: 100vh;
+
+}
+
+.myHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(6, 6, 15);
+    background-color: #294bf4;
+    padding: 8px 15px;
+    /* Melhoria nas proporções do padding */
+}
+
+.myImg {
+    height: 50px;
+    width: 50px;
+    /* Adição de largura para garantir uma forma circular perfeita */
+    border-radius: 50%;
+    border: 1px solid #fff;
+    /* Adição de uma borda branca para melhor contraste */
+}
+
+h1 {
+    color: #fff;
+    /* Cor do texto */
+    margin-left: 15px;
+    /* Espaçamento entre a imagem e o nome */
+    font-size: 20px;
+    /* Tamanho da fonte para o nome */
+}
+
+nav{
+    background-color: #294bf4;
+    box-shadow:3px 3px 5px rgb(234, 234, 242);
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color:white;
+}
+
+nav a:hover{
+    background-color: #666363;
+}
+
+
+.sidebar{
+    position: fixed;
+    top:0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #294bf4;
+    backdrop-filter: blur(10px);
+    display: none;
+    box-shadow: -10px 0 10pc rgb(247, 245, 245);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+width: 100%;
+}
+
+.menu-button{
+display: none;
+}
+
+@media  (max-width: 800px) {
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+    .sidebar{
+        width: 100%;
+    }
+    .sidebar.show{
+        display: flex;
+    }
+
+}
+
+.conteiner-img{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.perfilimg{
+    border:1px solid black;
+}
+
+.conteiner-text{
+    justify-content: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+    font-size: 16px;
+}
+
+.conteiner-a{
+    background-color: rgb(4, 127, 253);
+    display: flex;
+    border: 2px solid rgb(6, 6, 15);
+
+
+}
+.myFooter {
+    border: 1px solid rgb(6, 6, 15);
+    background-color: #294bf4;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+}
+
+.myFooter a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 20px;
+    font-size: 16px;
+}
+
+.myImgSocial {
+    height: 30px;
+    width: 30px;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+
+
+
