@@ -15,6 +15,7 @@ nav {
     height: 16vh;
     width: 100%;
     background: #294bf4;
+    position: fixed;
 }
 
 
