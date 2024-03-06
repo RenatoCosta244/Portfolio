@@ -214,7 +214,7 @@ a:hover {
     background-color: black;
 }
 
-.container {
+.container-1{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
@@ -256,7 +256,7 @@ a:hover {
     width: 0;
     height: 4px;
     border-radius: 2px 0 0 2px;
-    background-color: black;
+    background-color: #294bf4;
     transition: .5s;
 
 }
@@ -269,7 +269,7 @@ a:hover {
     width: 0;
     height: 4px;
     border-radius: 0 2px 2px 0;
-    background-color: black;
+    background-color: #294bf4;
     transition: .5s;
 }
 
@@ -307,14 +307,14 @@ a:hover {
 }
 
 @media screen and (max-width: 990px) {
-    .container{
+    .container-1{
         grid-template-columns: repeat(2, 1fr);
         padding: 2rem 50px;
     }
 }
 
 @media screen and (max-width: 650px) {
-    .container{
+    .container-1{
         grid-template-columns: 1fr;
     
     }
@@ -328,7 +328,127 @@ a:hover {
 .conteiner-d {
     width: 100%;
     background-color: rgb(4, 191, 253);
+
 }
+
+.container-2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+}
+
+.service-box2 {
+    padding: 1rem;
+    color: #ddd;
+    cursor: pointer;
+    border: 1px solid black;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#meu-icone {
+    color: black;
+}
+
+.service-box2:hover > .service-title2::after >.service-box2:hover > .service-title2::before {
+    width: 35px;
+}
+
+.service-box2:hover .img2{
+    transform: translateY(-10px);
+}
+
+.service-title2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.service-title2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 0;
+    height: 4px;
+    border-radius: 2px 0 0 2px;
+    transition: .5s;
+
+}
+
+.service-title2::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 0;
+    height: 4px;
+    border-radius: 0 2px 2px 0;
+    background-color: #294bf4;
+    transition: .5s;
+}
+
+.img2 {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    border-radius: 45px;
+    background-color:#294bf4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.img2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 80px;
+    border-radius: 45px 0 0 45px;
+}
+
+.service-title2 h4 {
+    color:black;
+    margin: 0.5rem;
+}
+
+.service-icon2 {
+    width: 50px;
+    z-index: 2;
+}
+
+@media screen and (max-width: 990px) {
+    .container-2{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 50px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .container-2{
+        grid-template-columns: 1fr;
+    
+    }
+}
+
+
+
+
 @media screen and (max-width: 990px) {
     .container-c{
         grid-template-columns: repeat(2, 1fr);
@@ -342,6 +462,68 @@ a:hover {
     
     }
 }
+
+/* service */
+.service .service-item{
+    margin-bottom: 30px;
+    flex: 0 0 33.33%;
+    max-width:  33.33%;
+}
+.service-item-inner {
+    background-color: var(#294bf4);
+    border: 1px solid var(black);
+    border-radius: 40px;
+    padding: 30px 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+
+}
+.service .service-item .service-item-inner:hover{
+    box-shadow: 0 0 20 rgba(100, 100, 100, 0.5);
+}
+
+
+.service .service-item .service-item-inner .icon {
+   height: 60px;
+   width: 60px;
+   border-radius:50%;
+   display: block;
+   margin: 0 auto 30px;
+}
+
+.conteiner-e{
+    background-color: #294bf4;
+    width: 100%;
+    height: 400px;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item {
+    margin-bottom: 15px;
+}
+
+.contact-item i {
+    margin-right: 10px;
+}
+
+.contact-item a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    color: #007bff;
+}
+
+
 
 .myFooter {
     background-color: #294bf4;
