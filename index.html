@@ -10,11 +10,72 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <style>
+        /* Responsividade */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+            }
+
+            nav ul.show {
+                display: flex;
+            }
+
+            .myImg {
+                width: 100px;
+                height: 100px;
+            }
+
+            .imgpr {
+                width: 100%;
+                height: auto;
+            }
+
+            .service-box2 {
+                margin-bottom: 20px;
+            }
+
+            .w3-third {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container-1, .container-2 {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flex-item {
+            flex: 1 1 300px;
+            margin: 10px;
+            box-sizing: border-box;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 
 <body>
     <nav>
-        <img src="./IMG/renato.jpg" alt="" class="myImg">
+        <img src="./IMG/renato.jpg" alt="Renato Costa" class="myImg">
         <ul>
             <li><a class="active" href="#About">About</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -34,286 +95,234 @@
             <div class="textformat" id="text"></div>
         </div>
     </section>
+
     <section class="new-conteiner">
         <div class="wrapper">
             <div class="header">
-                <h1>About My</h1>
+                <h1>About Me</h1>
             </div>
-            <img class="imgpr" src="./IMG/Renato_foto-removebg-preview.png" alt="">
+            <img class="imgpr" src="./IMG/Renato_foto-removebg-preview.png" alt="Renato Costa">
             <div class="text-box">
                 <h6>Renato Costa</h6>
-                <p>Cabo verdiano Licenciado em informatica de gestão, na universidade Jean Piaget no
-                    ano de 2022.</p>
-                <p>Sou um profissional dinâmico, com iniciativa, capacidade analítica, espírito de
-                    equipa com uma mente inovador capaz de trabalhar em múltiplas tarefas de forma organizada e
-                    orientada para o cumprimento dos objetivos.</p>
+                <p>Cabo-verdiano, Licenciado em Informática de Gestão pela Universidade Jean Piaget no ano de 2022.</p>
+                <p>Sou um profissional dinâmico, com iniciativa, capacidade analítica, espírito de equipe e uma mente inovadora, capaz de trabalhar em múltiplas tarefas de forma organizada e orientada para o cumprimento dos objetivos.</p>
                 <div class="contac-text">
-                    <a href="https://www.facebook.com/renato.costa.1069020"><img class="myImgSocial"
-                            src="./IMG/facebook (1).png" alt=""></a>
-                    <a href="https://wa.me/seuNumeroWhatsApp" target="_blank"><img class="myImgSocial"
-                            src="./IMG/whatsapp.png" alt=""></a>
-                    <a href="www.linkedin.com/in/renato-costa-50639a17b" target="_blank"><img class="myImgSocial"
-                            src="./IMG/linkedin.png" alt=""></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="conteiner-b" id="skills">
-        <div class="inner">
-            <div class="header">
-                <h1>My skills</h1>
-            </div>
-            <div class="container-1">
-                <div class="skill-box">
-                    <div class="skill-title">
-                        <div class="img">
-                            <img src="IMG/icons8-ai-64.png" class="skill-icon">
-                        </div>
-                        <h3>AI</h3>
-                    </div>
-                    <p>Habilidade comprovada na utilização avançada das melhores ferramentas de IA, incluindo ChatGPT, Mônica e outras plataformas de inteligência artificial líderes do mercado.</p>
-                </div>
-                <div class="skill-box">
-                    <div class="skill-title">
-                        <div class="img">
-                            <img src="IMG/icons8-joomla-logo-48.png" class="skill-icon">
-                        </div>
-                        <h3>Joomla</h3>
-                    </div>
-                    <p>Experiência avançada na construção e gestão de sites utilizando Joomla, incluindo a administração de conteúdos e configuração de sistemas de compartilhamento de informações.</p>
-                </div>
-                <div class="skill-box">
-                    <div class="skill-title">
-                        <div class="img">
-                            <img src="IMG/icons8-github-64.png" class="skill-icon">
-                        </div>
-                        <h3>
-                            Github
-                        </h3>
-                    </div>
-                    <p>Competências em programação e habilidades robustas na instalação e configuração de servidores.</p>
-                </div>
-                <div class="skill-box">
-                    <div class="skill-title">
-                        <div class="img">
-                            <img src="IMG/icons8-connect-64.png" class="skill-icon">
-                        </div>
-                        <h3>Servidores </h3>
-                    </div>
-                    <p>Capacidade de configuração e instalaçao de Servidor</p>
-                </div>
-                <div class="skill-box">
-                    <div class="skill-title">
-                        <div class="img">
-                            <img src="IMG/icons8-html-5-64.png" class="skill-icon">
-                        </div>
-                        <h3>HTML:5</h3>
-                    </div>
-                    <p>Desenvolvimento de sistemas web no back-end com HTML5.</p>
-                </div>
-                <div class="skill-box">
-                    <div class="skill-title">
-                        <div class="img">
-                            <img src="IMG/icons8-mysql-64.png" class="skill-icon">
-                        </div>
-                        <h3> MYSQL</h3>
-                    </div>
-                    <p> Proficiência na utilização de bancos de dados para armazenar dados e transformá-los em conhecimento valioso.</p>
+                    <a href="https://www.facebook.com/renato.costa.1069020" target="_blank"><img class="myImgSocial" src="./IMG/facebook (1).png" alt="Facebook"></a>
+                    <a href="https://wa.me/seuNumeroWhatsApp" target="_blank"><img class="myImgSocial" src="./IMG/whatsapp.png" alt="WhatsApp"></a>
+                    <a href="https://www.linkedin.com/in/renato-costa-50639a17b" target="_blank"><img class="myImgSocial" src="./IMG/linkedin.png" alt="LinkedIn"></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="conteiner-c" id="works" >
+    <section class="conteiner-b" id="skills">
+        <div class="inner">
+            <div class="header">
+                <h1>My Skills</h1>
+            </div>
+            <div class="flex-container">
+                <div class="skill-box flex-item">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="IMG/icons8-ai-64.png" class="skill-icon" alt="AI">
+                        </div>
+                        <h3>AI</h3>
+                    </div>
+                    <p>Habilidade comprovada na utilização avançada das melhores ferramentas de IA, incluindo ChatGPT, Mônica e outras plataformas de inteligência artificial líderes do mercado.</p>
+                </div>
+                <div class="skill-box flex-item">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="IMG/icons8-joomla-logo-48.png" class="skill-icon" alt="Joomla">
+                        </div>
+                        <h3>Joomla</h3>
+                    </div>
+                    <p>Experiência avançada na construção e gestão de sites utilizando Joomla, incluindo a administração de conteúdos e configuração de sistemas de compartilhamento de informações.</p>
+                </div>
+                <div class="skill-box flex-item">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="IMG/icons8-github-64.png" class="skill-icon" alt="Github">
+                        </div>
+                        <h3>Github</h3>
+                    </div>
+                    <p>Competências em programação e habilidades robustas na instalação e configuração de servidores.</p>
+                </div>
+                <div class="skill-box flex-item">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="IMG/icons8-connect-64.png" class="skill-icon" alt="Servidores">
+                        </div>
+                        <h3>Servidores</h3>
+                    </div>
+                    <p>Capacidade de configuração e instalação de servidores.</p>
+                </div>
+                <div class="skill-box flex-item">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="IMG/icons8-html-5-64.png" class="skill-icon" alt="HTML5">
+                        </div>
+                        <h3>HTML5</h3>
+                    </div>
+                    <p>Desenvolvimento de sistemas web no back-end com HTML5.</p>
+                </div>
+                <div class="skill-box flex-item">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="IMG/icons8-mysql-64.png" class="skill-icon" alt="MySQL">
+                        </div>
+                        <h3>MySQL</h3>
+                    </div>
+                    <p>Proficiência na utilização de bancos de dados para armazenar dados e transformá-los em conhecimento valioso.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="conteiner-c" id="works">
         <div class="header">
-            <h1>My works</h1>
+            <h1>My Works</h1>
         </div>
         <div class="w3-row-padding">
             <div class="w3-third w3-container w3-margin-bottom">
-                <img src="IMG/Capturar.PNG" alt="Norway" style="width:100%; height: 200px;" class="w3-hover-opacity">
+                <img src="IMG/Capturar.PNG" alt="Sistema de Gestão dos Técnicos" class="w3-hover-opacity">
                 <div class="w3-container w3-white">
-                    <p><b>Sistema de Gestao dos tecnicos</b></p>
-                    <p>Com este sistema permite ao gestor monitorar o desempenho dos tecnicos de TI, tendo informaçoes
-                        precisa.</p>
+                    <p><b>Sistema de Gestão dos Técnicos</b></p>
+                    <p>Com este sistema, o gestor pode monitorar o desempenho dos técnicos de TI, obtendo informações precisas.</p>
                 </div>
             </div>
             <div class="w3-third w3-container w3-margin-bottom">
-                <img src="IMG/gestao suporte tecnico.PNG" alt="Norway" style="width:100%; height: 200px;"
-                    class="w3-hover-opacity">
+                <img src="IMG/gestao suporte tecnico.PNG" alt="Gestão de Suporte Técnico" class="w3-hover-opacity">
                 <div class="w3-container w3-white">
-                    <p><b>Gestao de suporte tecnico</b></p>
-                    <p>Este sistama consegue gerenciar os suportes solicitados dentro da instituição podendo dar uma
-                        resposta mais precisa.</p>
+                    <p><b>Gestão de Suporte Técnico</b></p>
+                    <p>Este sistema consegue controlar e monitorar todos os pedidos de suporte técnico que são reportados.</p>
                 </div>
             </div>
-            <div class="w3-third w3-container w3-margin-bottom">
-                <img src="IMG/pedido de equipamento.PNG" alt="Norway" style="width:100%; height: 200px;"
-                    class="w3-hover-opacity">
+            <div class="w3-third w3-container">
+                <img src="IMG/gestaousuario.PNG" alt="Sistema de Gestão de Usuários" class="w3-hover-opacity">
                 <div class="w3-container w3-white">
-                    <p><b>Gestao de pedido de equipamentos</b></p>
-                    <p>Este sistema permite monitorar todos os equipamentos solicitados dentro da instituição, proporcionando uma resposta precisa e eficiente.</p>
-                </div>
-            </div>
-        </div>
-        <div class="w3-row-padding">
-            <div class="w3-third w3-container w3-margin-bottom">
-                <img src="IMG/Capturar.PNG" alt="Norway" style="width:100%; height: 200px;" class="w3-hover-opacity">
-                <div class="w3-container w3-white">
-                    <p><b>Sistema de Gestao dos tecnicos</b></p>
-                    <p>Com este sistema, o gestor consegue monitorar o desempenho dos técnicos de TI, obtendo informações precisas e detalhadas</p>
-                </div>
-            </div>
-            <div class="w3-third w3-container w3-margin-bottom">
-                <img src="IMG/gestao suporte tecnico.PNG" alt="Norway" style="width:100%; height: 200px;"
-                    class="w3-hover-opacity">
-                <div class="w3-container w3-white">
-                    <p><b>Gestao de suporte tecnico</b></p>
-                    <p>Este sistama consegue gerenciar os suportes solicitados dentro da instituição podendo dar uma
-                        resposta mais precisa.</p>
-                </div>
-            </div>
-            <div class="w3-third w3-container w3-margin-bottom">
-                <img src="IMG/pedido de equipamento.PNG" alt="Norway" style="width:100%; height: 200px;"
-                    class="w3-hover-opacity">
-                <div class="w3-container w3-white">
-                    <p><b>Gestao de pedido de equipamentos</b></p>
-                    <p>O sistema consegue monitorizar todos os equipamentos solicitados dentro da instituição.</p>
+                    <p><b>Sistema de Gestão de Usuários</b></p>
+                    <p>Com este sistema é possível monitorar o desempenho dos usuários e obter informações precisas.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="conteiner-d" id="service">
-        <div class="inner">
+        <div class="wrapper">
             <div class="header">
-                <h1>My Service</h1>
+                <h1>My Services</h1>
             </div>
-            <div class="container-2">
-                <div class="service-box2">
+            <div class="flex-container">
+                <div class="service-box2 flex-item">
                     <div class="service-title2">
                         <div class="img2">
-                            <i class="fa fa-mobile-alt" id="meu-icone" class="skill-icon"></i>
+                            <i class="fa fa-laptop" id="meu-icone"></i>
                         </div>
-                        <h4>Responsive</h4>
+                        <h4>Sistema Responsivo</h4>
                         <p>Um sistema responsivo que se adapta automaticamente a diversos dispositivos e tamanhos de tela, proporcionando uma experiência de usuário consistente e otimizada, seja em desktops, tablets ou smartphones.</p>
                     </div>
                 </div>
-                <div class="service-box2">
+                <div class="service-box2 flex-item">
                     <div class="service-title2">
                         <div class="img2">
                             <i class="fa fa-laptop-code" id="meu-icone"></i>
                         </div>
-                        <h4>Web site</h4>
-                        <p>Um website dinâmico e intuitivo, desenvolvido com as mais recentes tecnologias web, que oferece navegação fluida e conteúdo informativo, otimizado para desempenho e acessibilidade em todos os dispositivos. Inclui funcionalidades interativas, design responsivo e integração com bases de dados para fornecer uma experiência personalizada e envolvente aos usuários.</p>
+                        <h4>Website</h4>
+                        <p>Um website dinâmico e intuitivo, desenvolvido com as mais recentes tecnologias web, que oferece navegação fluida e conteúdo informativo, otimizado para desempenho e acessibilidade em todos os dispositivos.</p>
                     </div>
                 </div>
-                <div class="service-box2">
+                <div class="service-box2 flex-item">
                     <div class="service-title2">
                         <div class="img2">
-                            <i class="fa fa-bullhorn " id="meu-icone"></i>
+                            <i class="fa fa-bullhorn" id="meu-icone"></i>
                         </div>
                         <h4>Web Design</h4>
-                        <p>lorem</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
                     </div>
                 </div>
-                <div class="service-box2">
+                <div class="service-box2 flex-item">
                     <div class="service-title2">
                         <div class="img2">
                             <i class="fa fa-search" id="meu-icone"></i>
                         </div>
-                        <h4>Web Design</h4>
-                        <p>lorem</p>
+                        <h4>SEO</h4>
+                        <p>Lorem ipsum dolor sit amet.</p>
                     </div>
                 </div>
-                <div class="service-box2">
+                <div class="service-box2 flex-item">
                     <div class="service-title2">
                         <div class="img2">
                             <i class="fa fa-code" id="meu-icone"></i>
                         </div>
-                        <h4>Site Html</h4>
-                        <p>lorem</p>
+                        <h4>HTML Site</h4>
+                        <p>Lorem ipsum dolor sit amet.</p>
                     </div>
                 </div>
-                <div class="service-box2">
+                <div class="service-box2 flex-item">
                     <div class="service-title2">
                         <div class="img2">
                             <i class="fa-solid fa-sitemap" id="meu-icone"></i>
                         </div>
-                        <h4>Mapiamento de processos</h4>
-                        <p>lorem</p>
+                        <h4>Mapeamento de Processos</h4>
+                        <p>Lorem ipsum dolor sit amet.</p>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
     </section>
+
     <section class="conteiner-e" id="contact">
         <div class="header">
             <h1>My Contact</h1>
         </div>
-        <div class="contact-container">
-            <div class="contact-item">
-                <i class="fas fa-mobile-alt"></i> <a href="tel:+238">Telemovel: 9745243</a>
+        <div class="contact-container flex-container">
+            <div class="contact-item flex-item">
+                <i class="fas fa-mobile-alt"></i> <a href="tel:+2389745243">Telemóvel: 9745243</a>
             </div>
-            <div class="contact-item">
-                <i class="fas fa-mobile-alt"></i> <a href="tel:+238">Tele Swag: 5830906</a>
+            <div class="contact-item flex-item">
+                <i class="fas fa-mobile-alt"></i> <a href="tel:+2385830906">Tele Swag: 5830906</a>
             </div>
-            <div class="contact-item">
+            <div class="contact-item flex-item">
                 <i class="far fa-envelope"></i> <a href="mailto:renato244costa@gmail.com">Email: renato244costa@gmail.com</a>
             </div>
-            <div class="contact-item">
-                <i class="fab fa-linkedin"></i> <a href="http://www.linkedin.com/in/renato-costa-50639a17b">LinkedIn: www.linkedin.com/in/renato-costa-50639a17b</a>
+            <div class="contact-item flex-item">
+                <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/renato-costa-50639a17b">LinkedIn: www.linkedin.com/in/renato-costa-50639a17b</a>
             </div>
         </div>
     </section>
 
     <footer class="myFooter">
         <div class="footer-content">
-            <a href="https://www.facebook.com/renato.costa.1069020"><img class="myImgSocial"
-                    src="./IMG/facebook (1).png" alt=""></a>
-            <a href="https://wa.me/seuNumeroWhatsApp" target="_blank"><img class="myImgSocial" src="./IMG/whatsapp.png"
-                    alt=""></a>
-            <a href="www.linkedin.com/in/renato-costa-50639a17b" target="_blank"><img class="myImgSocial"
-                    src="./IMG/linkedin.png" alt=""></a>
+            <a href="https://www.facebook.com/renato.costa.1069020" target="_blank"><img class="myImgSocial" src="./IMG/facebook (1).png" alt="Facebook"></a>
+            <a href="https://wa.me/seuNumeroWhatsApp" target="_blank"><img class="myImgSocial" src="./IMG/whatsapp.png" alt="WhatsApp"></a>
+            <a href="https://www.linkedin.com/in/renato-costa-50639a17b" target="_blank"><img class="myImgSocial" src="./IMG/linkedin.png" alt="LinkedIn"></a>
         </div>
         <div class="rodape">Copyright 2023 | Renato Costa</div>
     </footer>
-</body>
 
-<script>
-    $(document).ready(function () {
-        $('#icon').click(function () {
-            $('ul').toggleClass('show');
+    <script>
+        $(document).ready(function () {
+            $('#icon').click(function () {
+                $('ul').toggleClass('show');
+            });
         });
-        // var typed = new Typed(".typing", {
-        //strings: ["Analista de sistema", "e sistema"],
-        //typeSpeed: 100,
-        //backSpeed: 60,
-        //loop: true
-        //});
 
-    });
+        const el = document.querySelector("#text");
+        const text = "Analista de sistemas e dados";
+        const interval = 300;
 
-    const el = document.querySelector("#text");
-    const text = "Analista de sistemas e dados";
-    const interval = 300;
-    function showText(el, text, interval) {
-        const char = text.split("").reverse();
+        function showText(el, text, interval) {
+            const char = text.split("").reverse();
+            const typer = setInterval(() => {
+                if (!char.length) return clearInterval(typer);
+                const next = char.pop();
+                el.innerHTML += next;
+            }, interval);
+        }
 
-
-        const typer = setInterval(() => {
-            if (!char.length) {
-
-                return clearInterval(typer);
-
-            }
-            const next = char.pop();
-            el.innerHTML += next;
-
-        }, interval);
-    }
-
-    showText(el, text, interval);
-</script>
+        showText(el, text, interval);
+    </script>
+</body>
 
 </html>
